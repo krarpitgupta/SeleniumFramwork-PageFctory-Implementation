@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browserName" value="Chrome"/>
+  <test name="Test on FF(failed)" parallel="tests">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="com.rediff.testcases.ShoppingPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="beforeMethod"/>
+          <include name="clickOnMenLifeStyleTest"/>
+          <include name="LoginTestSetUp"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.ShoppingPageTest -->
+      <class name="com.rediff.testcases.LoginTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="LoginTestSetUp"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.LoginTest -->
+      <class name="com.rediff.testcases.HomePageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="TestBrokenLink"/>
+          <include name="setUpTest"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="HomePageTestSetUp"/>
+          <include name="HomePageTestSetUp"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Test on FF(failed) -->
+  <test name="Test on Chrome(failed)" parallel="tests">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="com.rediff.testcases.ShoppingPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="beforeMethod"/>
+          <include name="clickOnMenLifeStyleTest"/>
+          <include name="LoginTestSetUp"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.ShoppingPageTest -->
+      <class name="com.rediff.testcases.LoginTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="invalidLoginTest"/>
+          <include name="LoginTestSetUp"/>
+          <include name="sucessfullLoginTest"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.LoginTest -->
+      <class name="com.rediff.testcases.HomePageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="TestBrokenLink"/>
+          <include name="setUpTest"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="HomePageTestSetUp"/>
+          <include name="HomePageTestSetUp"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

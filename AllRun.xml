@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+  <test name="Test on FF">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="com.rediff.testcases.HomePageTest"/>
+      <class name="com.rediff.testcases.LoginTest"/>
+      <class name="com.rediff.testcases.ShoppingPageTest"/>
+    </classes>
+  </test>
+ 
+  <test name="Test on Chrome">
+    <parameter name="browserName" value="Chrome" />
+    <classes>
+      <class name="com.rediff.testcases.HomePageTest"/>
+      <class name="com.rediff.testcases.LoginTest"/>
+      <class name="com.rediff.testcases.ShoppingPageTest"/>
+    </classes>
+  </test> 
+ </suite> 

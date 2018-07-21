@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Rediff Mail Execution Suite]" parallel="methods">
+  <parameter name="BROWSER" value="Chrome"/>
+  <test name="Rediff WebSite Testing 1(failed)" parallel="methods">
+    <classes>
+      <class name="com.rediff.testcases.HomePageTest">
+        <methods>
+          <include name="verifyUIElementsOnHomePage"/>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="startWebDriver"/>
+          <include name="startWebDriver"/>
+          <include name="TestBrokenLink"/>
+          <include name="setUpTest"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="searchText"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.HomePageTest -->
+      <class name="com.rediff.testcases.LoginTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="invalidLoginTest"/>
+          <include name="sucessfullLoginTest"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.LoginTest -->
+      <class name="com.rediff.testcases.ShoppingPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="clickOnMenLifeStyleTest"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.ShoppingPageTest -->
+    </classes>
+  </test> <!-- Rediff WebSite Testing 1(failed) -->
+  <test name="Rediff WebSite Testing 2(failed)" parallel="methods">
+    <classes>
+      <class name="com.rediff.testcases.HomePageTest">
+        <methods>
+          <include name="verifyUIElementsOnHomePage"/>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="startWebDriver"/>
+          <include name="startWebDriver"/>
+          <include name="TestBrokenLink"/>
+          <include name="setUpTest"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="searchText"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.HomePageTest -->
+      <class name="com.rediff.testcases.LoginTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+          <include name="invalidLoginTest"/>
+          <include name="sucessfullLoginTest"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.LoginTest -->
+      <class name="com.rediff.testcases.ShoppingPageTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="clickOnMenLifeStyleTest"/>
+          <include name="stopDriver"/>
+          <include name="stopDriver"/>
+        </methods>
+      </class> <!-- com.rediff.testcases.ShoppingPageTest -->
+    </classes>
+  </test> <!-- Rediff WebSite Testing 2(failed) -->
+</suite> <!-- Failed suite [Rediff Mail Execution Suite] -->

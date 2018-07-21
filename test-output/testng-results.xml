@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="9" failed="3" total="24" passed="12">
+  <reporter-output>
+    <line>
+      <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : http://register.rediff.com/register/register.php?FormName=user_details  is invalid]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : http://businessemail.rediff.com/?sc_cid=inhome  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : http://money.rediff.com/  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : http://www.rediff.com/  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : http://register.rediff.com/register/register.php?FormName=user_details  is invalid]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : http://businessemail.rediff.com/?sc_cid=inhome  works fine]]>
+    </line>
+    <line>
+      <![CDATA[isLinkBroken : http://money.rediff.com/  works fine]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="641275" started-at="2015-09-09T03:55:22Z" finished-at="2015-09-09T04:06:03Z">
+    <groups>
+    </groups>
+    <test name="Test on FF" duration-ms="151154" started-at="2015-09-09T03:55:22Z" finished-at="2015-09-09T03:57:53Z">
+      <class name="com.rediff.testcases.HomePageTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="beforeMethod" is-config="true" duration-ms="13491" started-at="2015-09-08T20:55:22Z" finished-at="2015-09-08T20:55:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.TestBrokenLink() throws com.framework.exception.SeleniumException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="HomePageTestSetUp()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="HomePageTestSetUp" is-config="true" duration-ms="63" started-at="2015-09-08T20:55:36Z" finished-at="2015-09-08T20:55:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTestSetUp -->
+        <test-method status="FAIL" signature="TestBrokenLink()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="TestBrokenLink" duration-ms="1231" started-at="2015-09-08T20:55:36Z" finished-at="2015-09-08T20:55:37Z">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.setNewClient(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.setNewClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at java.net.HttpURLConnection.getResponseMessage(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseMessage(Unknown Source)
+	at com.framework.actions.WebAction.getResponseCode(WebAction.java:423)
+	at com.framework.actions.WebAction.isLinkBroken(WebAction.java:467)
+	at com.rediff.pages.HomePage.verifyAllLinkOnHomePage(HomePage.java:81)
+	at com.rediff.testcases.HomePageTest.TestBrokenLink(HomePageTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 41 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 47 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[isLinkBroken : http://www.rediff.com/  works fine]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : http://register.rediff.com/register/register.php?FormName=user_details  is invalid]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : http://businessemail.rediff.com/?sc_cid=inhome  works fine]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : http://money.rediff.com/  works fine]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestBrokenLink -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="TearDown" is-config="true" duration-ms="3561" started-at="2015-09-08T20:55:37Z" finished-at="2015-09-08T20:55:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestBrokenLink status=FAILURE method=HomePageTest.TestBrokenLink()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890] output=isLinkBroken : http://www.rediff.com/  works fine]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.TestBrokenLink() throws com.framework.exception.SeleniumException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="beforeMethod" is-config="true" duration-ms="8893" started-at="2015-09-08T20:55:40Z" finished-at="2015-09-08T20:55:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.searchText(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="HomePageTestSetUp()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="HomePageTestSetUp" is-config="true" duration-ms="45" started-at="2015-09-08T20:55:49Z" finished-at="2015-09-08T20:55:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTestSetUp -->
+        <test-method status="PASS" signature="searchText(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="searchText" duration-ms="1598" started-at="2015-09-08T20:55:49Z" data-provider="readData" finished-at="2015-09-08T20:55:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{search=Mobile}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchText -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="TearDown" is-config="true" duration-ms="1293" started-at="2015-09-08T20:55:51Z" finished-at="2015-09-08T20:55:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchText status=SUCCESS method=HomePageTest.searchText(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.searchText(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="beforeMethod" is-config="true" duration-ms="9885" started-at="2015-09-08T20:55:52Z" finished-at="2015-09-08T20:56:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.verifyUIElementsOnHomePage()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="HomePageTestSetUp()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="HomePageTestSetUp" is-config="true" duration-ms="49" started-at="2015-09-08T20:56:02Z" finished-at="2015-09-08T20:56:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTestSetUp -->
+        <test-method status="PASS" signature="verifyUIElementsOnHomePage()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="verifyUIElementsOnHomePage" duration-ms="1429" started-at="2015-09-08T20:56:02Z" finished-at="2015-09-08T20:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUIElementsOnHomePage -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="TearDown" is-config="true" duration-ms="713" started-at="2015-09-08T20:56:04Z" finished-at="2015-09-08T20:56:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUIElementsOnHomePage status=SUCCESS method=HomePageTest.verifyUIElementsOnHomePage()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.verifyUIElementsOnHomePage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.rediff.testcases.HomePageTest@5aebe890]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-09-08T20:56:04Z" finished-at="2015-09-08T20:56:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- com.rediff.testcases.HomePageTest -->
+      <class name="com.rediff.testcases.LoginTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="9169" started-at="2015-09-08T20:56:04Z" finished-at="2015-09-08T20:56:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="1860" started-at="2015-09-08T20:56:13Z" finished-at="2015-09-08T20:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="invalidLoginTest" duration-ms="1754" started-at="2015-09-08T20:56:15Z" data-provider="readData" finished-at="2015-09-08T20:56:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd1, Password=aaaaaaaaaa}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="417" started-at="2015-09-08T20:56:17Z" finished-at="2015-09-08T20:56:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="8299" started-at="2015-09-08T20:56:17Z" finished-at="2015-09-08T20:56:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="1430" started-at="2015-09-08T20:56:26Z" finished-at="2015-09-08T20:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="invalidLoginTest" duration-ms="1990" started-at="2015-09-08T20:56:27Z" data-provider="readData" finished-at="2015-09-08T20:56:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd2, Password=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="330" started-at="2015-09-08T20:56:29Z" finished-at="2015-09-08T20:56:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="7113" started-at="2015-09-08T20:56:30Z" finished-at="2015-09-08T20:56:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="3528" started-at="2015-09-08T20:56:37Z" finished-at="2015-09-08T20:56:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="invalidLoginTest" duration-ms="1863" started-at="2015-09-08T20:56:40Z" data-provider="readData" finished-at="2015-09-08T20:56:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd3, Password=abc1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="996" started-at="2015-09-08T20:56:42Z" finished-at="2015-09-08T20:56:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="7046" started-at="2015-09-08T20:56:43Z" finished-at="2015-09-08T20:56:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="1481" started-at="2015-09-08T20:56:50Z" finished-at="2015-09-08T20:56:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="invalidLoginTest" duration-ms="1403" started-at="2015-09-08T20:56:52Z" data-provider="readData" finished-at="2015-09-08T20:56:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd4, Password=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="456" started-at="2015-09-08T20:56:53Z" finished-at="2015-09-08T20:56:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="7003" started-at="2015-09-08T20:56:53Z" finished-at="2015-09-08T20:57:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="1467" started-at="2015-09-08T20:57:00Z" finished-at="2015-09-08T20:57:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="invalidLoginTest" duration-ms="1510" started-at="2015-09-08T20:57:02Z" data-provider="readData" finished-at="2015-09-08T20:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd5, Password=abc1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="368" started-at="2015-09-08T20:57:03Z" finished-at="2015-09-08T20:57:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="8954" started-at="2015-09-08T20:57:04Z" finished-at="2015-09-08T20:57:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="1396" started-at="2015-09-08T20:57:13Z" finished-at="2015-09-08T20:57:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="invalidLoginTest" duration-ms="1808" started-at="2015-09-08T20:57:14Z" data-provider="readData" finished-at="2015-09-08T20:57:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd6, Password=aaaaaaaaaa}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="441" started-at="2015-09-08T20:57:16Z" finished-at="2015-09-08T20:57:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="7054" started-at="2015-09-08T20:57:16Z" finished-at="2015-09-08T20:57:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="1339" started-at="2015-09-08T20:57:23Z" finished-at="2015-09-08T20:57:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="invalidLoginTest" duration-ms="1620" started-at="2015-09-08T20:57:25Z" data-provider="readData" finished-at="2015-09-08T20:57:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd7, Password=.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="1821" started-at="2015-09-08T20:57:26Z" finished-at="2015-09-08T20:57:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="beforeMethod" is-config="true" duration-ms="7242" started-at="2015-09-08T20:57:28Z" finished-at="2015-09-08T20:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.sucessfullLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="LoginTestSetUp" is-config="true" duration-ms="2082" started-at="2015-09-08T20:57:35Z" finished-at="2015-09-08T20:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="PASS" signature="sucessfullLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="sucessfullLoginTest" duration-ms="1797" started-at="2015-09-08T20:57:38Z" data-provider="readData" finished-at="2015-09-08T20:57:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=buddhatree, Password=affirm123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sucessfullLoginTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="TearDown" is-config="true" duration-ms="517" started-at="2015-09-08T20:57:39Z" finished-at="2015-09-08T20:57:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sucessfullLoginTest status=SUCCESS method=LoginTest.sucessfullLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.sucessfullLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.rediff.testcases.LoginTest@1f59a598]" name="stopDriver" is-config="true" duration-ms="1" started-at="2015-09-08T20:57:40Z" finished-at="2015-09-08T20:57:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- com.rediff.testcases.LoginTest -->
+      <class name="com.rediff.testcases.ShoppingPageTest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.ShoppingPageTest@192c3f1e]" name="beforeMethod" is-config="true" duration-ms="8655" started-at="2015-09-08T20:57:40Z" finished-at="2015-09-08T20:57:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.ShoppingPageTest.clickOnMenLifeStyleTest() throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@192c3f1e]" name="LoginTestSetUp" is-config="true" duration-ms="224" started-at="2015-09-08T20:57:49Z" finished-at="2015-09-08T20:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="FAIL" signature="clickOnMenLifeStyleTest()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@192c3f1e]" name="clickOnMenLifeStyleTest" duration-ms="1" started-at="2015-09-08T20:57:49Z" finished-at="2015-09-08T20:57:49Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.rediff.testcases.ShoppingPageTest.clickOnMenLifeStyleTest(ShoppingPageTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnMenLifeStyleTest -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.ShoppingPageTest@192c3f1e]" name="TearDown" is-config="true" duration-ms="4319" started-at="2015-09-08T20:57:49Z" finished-at="2015-09-08T20:57:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnMenLifeStyleTest status=FAILURE method=ShoppingPageTest.clickOnMenLifeStyleTest()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@192c3f1e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.ShoppingPageTest.clickOnMenLifeStyleTest() throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@192c3f1e]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-09-08T20:57:53Z" finished-at="2015-09-08T20:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- com.rediff.testcases.ShoppingPageTest -->
+    </test> <!-- Test on FF -->
+    <test name="Test on Chrome" duration-ms="641242" started-at="2015-09-09T03:55:22Z" finished-at="2015-09-09T04:06:03Z">
+      <class name="com.rediff.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="setUpTest" is-config="true" duration-ms="11" started-at="2015-09-08T20:55:22Z" finished-at="2015-09-08T20:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="beforeMethod" is-config="true" duration-ms="7096" started-at="2015-09-08T20:55:22Z" finished-at="2015-09-08T20:55:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.TestBrokenLink() throws com.framework.exception.SeleniumException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="HomePageTestSetUp()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="HomePageTestSetUp" is-config="true" duration-ms="129" started-at="2015-09-08T20:55:29Z" finished-at="2015-09-08T20:55:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTestSetUp -->
+        <test-method status="FAIL" signature="TestBrokenLink()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="TestBrokenLink" duration-ms="1635" started-at="2015-09-08T20:55:29Z" finished-at="2015-09-08T20:55:31Z">
+          <exception class="javax.net.ssl.SSLHandshakeException">
+            <message>
+              <![CDATA[sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source)
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source)
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source)
+	at sun.security.ssl.Handshaker.process_record(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.setNewClient(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.setNewClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.writeRequests(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+	at java.net.HttpURLConnection.getResponseMessage(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseMessage(Unknown Source)
+	at com.framework.actions.WebAction.getResponseCode(WebAction.java:423)
+	at com.framework.actions.WebAction.isLinkBroken(WebAction.java:467)
+	at com.rediff.pages.HomePage.verifyAllLinkOnHomePage(HomePage.java:81)
+	at com.rediff.testcases.HomePageTest.TestBrokenLink(HomePageTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source)
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source)
+	at sun.security.validator.Validator.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source)
+	... 41 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
+	at java.security.cert.CertPathBuilder.build(Unknown Source)
+	... 47 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- javax.net.ssl.SSLHandshakeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : http://register.rediff.com/register/register.php?FormName=user_details  is invalid]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : http://businessemail.rediff.com/?sc_cid=inhome  works fine]]>
+            </line>
+            <line>
+              <![CDATA[isLinkBroken : http://money.rediff.com/  works fine]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestBrokenLink -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="TearDown" is-config="true" duration-ms="4307" started-at="2015-09-08T20:55:31Z" finished-at="2015-09-08T20:55:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestBrokenLink status=FAILURE method=HomePageTest.TestBrokenLink()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a] output=isLinkBroken : https://mail.rediff.com/cgi-bin/login.cgi  works fine]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.TestBrokenLink() throws com.framework.exception.SeleniumException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="beforeMethod" is-config="true" duration-ms="8218" started-at="2015-09-08T20:55:35Z" finished-at="2015-09-08T20:55:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.searchText(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="HomePageTestSetUp()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="HomePageTestSetUp" is-config="true" duration-ms="38" started-at="2015-09-08T20:55:43Z" finished-at="2015-09-08T20:55:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTestSetUp -->
+        <test-method status="PASS" signature="searchText(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="searchText" duration-ms="608" started-at="2015-09-08T20:55:43Z" data-provider="readData" finished-at="2015-09-08T20:55:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{search=Mobile}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchText -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="TearDown" is-config="true" duration-ms="1909" started-at="2015-09-08T20:55:44Z" finished-at="2015-09-08T20:55:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchText status=SUCCESS method=HomePageTest.searchText(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.searchText(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="beforeMethod" is-config="true" duration-ms="8647" started-at="2015-09-08T20:55:46Z" finished-at="2015-09-08T20:55:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.verifyUIElementsOnHomePage()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="HomePageTestSetUp()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="HomePageTestSetUp" is-config="true" duration-ms="310" started-at="2015-09-08T20:55:55Z" finished-at="2015-09-08T20:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageTestSetUp -->
+        <test-method status="PASS" signature="verifyUIElementsOnHomePage()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="verifyUIElementsOnHomePage" duration-ms="373" started-at="2015-09-08T20:55:55Z" finished-at="2015-09-08T20:55:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUIElementsOnHomePage -->
+        <test-method status="PASS" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="TearDown" is-config="true" duration-ms="2041" started-at="2015-09-08T20:55:55Z" finished-at="2015-09-08T20:55:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUIElementsOnHomePage status=SUCCESS method=HomePageTest.verifyUIElementsOnHomePage()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.HomePageTest.verifyUIElementsOnHomePage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-09-08T20:55:57Z" finished-at="2015-09-08T20:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:com.rediff.testcases.HomePageTest@7748410a]" name="afterSuite" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:03Z" finished-at="2015-09-08T21:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.rediff.testcases.HomePageTest -->
+      <class name="com.rediff.testcases.LoginTest">
+        <test-method status="FAIL" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T20:55:57Z" finished-at="2015-09-08T20:55:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=45.0.2454.85)
+  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 600.04 seconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Shankar-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Shankar\AppData\Local\Temp\scoped_dir6952_9879}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.85, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 524cfa2941bb5ed21c4bff8bc5dbb634]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 600.000
+  (Session info: chrome=45.0.2454.85)
+  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 600.04 seconds
+Build info: version: '2.47.1', revision: 'unknown', time: '2015-07-30 11:02:44'
+System info: host: 'Shankar-PC', ip: '192.168.1.2', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_60'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\Shankar\AppData\Local\Temp\scoped_dir6952_9879}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=45.0.2454.85, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 524cfa2941bb5ed21c4bff8bc5dbb634
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:306)
+	at com.framework.testtemplate.TestBase.startWebDriver(TestBase.java:112)
+	at com.framework.testtemplate.TestBase.beforeMethod(TestBase.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:585)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="invalidLoginTest" duration-ms="1" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd1, Password=aaaaaaaaaa}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SKIP method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="invalidLoginTest" duration-ms="0" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd2, Password=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SKIP method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SKIP method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="invalidLoginTest" duration-ms="0" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd3, Password=abc1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="invalidLoginTest" duration-ms="0" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd4, Password=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SKIP method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="invalidLoginTest" duration-ms="1" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd5, Password=abc1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SKIP method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="invalidLoginTest" duration-ms="0" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd6, Password=aaaaaaaaaa}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SKIP method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SKIP method=LoginTest.invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.invalidLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="invalidLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="invalidLoginTest" duration-ms="0" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=abcd7, Password=.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sucessfullLoginTest status=SKIP method=LoginTest.sucessfullLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.LoginTest.sucessfullLoginTest(java.util.Hashtable) throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="SKIP" signature="sucessfullLoginTest(java.util.Hashtable)[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="sucessfullLoginTest" duration-ms="0" started-at="2015-09-08T21:06:02Z" data-provider="readData" finished-at="2015-09-08T21:06:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=buddhatree, Password=affirm123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sucessfullLoginTest -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.rediff.testcases.LoginTest@37f1104d]" name="stopDriver" is-config="true" duration-ms="1511" started-at="2015-09-08T21:06:02Z" finished-at="2015-09-08T21:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- com.rediff.testcases.LoginTest -->
+      <class name="com.rediff.testcases.ShoppingPageTest">
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.rediff.testcases.ShoppingPageTest@60015ef5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:03Z" finished-at="2015-09-08T21:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="LoginTestSetUp()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@60015ef5]" name="LoginTestSetUp" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:03Z" finished-at="2015-09-08T21:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestSetUp -->
+        <test-method status="SKIP" signature="clickOnMenLifeStyleTest()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@60015ef5]" name="clickOnMenLifeStyleTest" duration-ms="1" started-at="2015-09-08T21:06:03Z" finished-at="2015-09-08T21:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnMenLifeStyleTest -->
+        <test-method status="FAIL" signature="TearDown(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:com.rediff.testcases.ShoppingPageTest@60015ef5]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:03Z" finished-at="2015-09-08T21:06:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOnMenLifeStyleTest status=SKIP method=ShoppingPageTest.clickOnMenLifeStyleTest()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@60015ef5] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.rediff.testcases.ShoppingPageTest.clickOnMenLifeStyleTest() throws com.framework.exception.SeleniumException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.relevantcodes.extentreports.ExtentReports.endTest(ExtentReports.java:150)
+	at com.framework.testtemplate.TestBase.TearDown(TestBase.java:176)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:com.rediff.testcases.ShoppingPageTest@60015ef5]" name="stopDriver" is-config="true" duration-ms="0" started-at="2015-09-08T21:06:03Z" finished-at="2015-09-08T21:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- com.rediff.testcases.ShoppingPageTest -->
+    </test> <!-- Test on Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
