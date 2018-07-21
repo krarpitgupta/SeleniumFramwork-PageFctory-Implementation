@@ -30,6 +30,4 @@ Main features:
 * Reports : Custom html reports are generated and available in test-output folder;
 
 
-Contact
-=======
-For any information about this sample project, send an email to abhaybharti@gmail.com
+
